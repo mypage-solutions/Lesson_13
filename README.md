@@ -1,6 +1,5 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/count/mypage-solutions/Lesson_13)
 ![GitHub top language](https://img.shields.io/github/languages/top/mypage-solutions/Lesson_13)
-![Lines of code](https://img.shields.io/tokei/lines/github/mypage-solutions/Lesson_13)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mypage-solutions/Lesson_13)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mypage-solutions/Lesson_13)
 
