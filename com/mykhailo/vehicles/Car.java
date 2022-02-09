@@ -3,7 +3,7 @@ package com.mykhailo.vehicles;
 import com.mykhailo.details.Engine;
 import com.mykhailo.professions.Driver;
 
-public abstract class Car {
+public class Car {
 
     protected final String carBrand;
     protected final String carClass;
