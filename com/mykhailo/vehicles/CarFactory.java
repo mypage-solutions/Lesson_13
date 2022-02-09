@@ -12,7 +12,7 @@ public class CarFactory {
         lorry.setDriver("Jack Jackson", 20, "20.03.1980");
         lorry.setEngine("Renault", 400);
         System.out.println(lorry);
-        lorry.getDriver().presentAge();
+        lorry.getDriver().getAge();
 
     }
 }
