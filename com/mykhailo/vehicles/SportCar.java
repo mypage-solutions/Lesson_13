@@ -2,7 +2,7 @@ package com.mykhailo.vehicles;
 
 public class SportCar extends Car {
 
-    private int maxSpeed;
+    protected int maxSpeed;
 
     public SportCar(String carBrand, String carClass, double weight, int maxSpeed) {
         super(carBrand, carClass, weight);

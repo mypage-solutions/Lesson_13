@@ -2,7 +2,7 @@ package com.mykhailo.vehicles;
 
 public class Lorry extends Car{
 
-    private int carrying;
+    protected int carrying;
 
     public Lorry(String carBrand, String carClass, double weight, int carrying) {
         super(carBrand, carClass, weight);

@@ -5,11 +5,11 @@ import com.mykhailo.professions.Driver;
 
 public abstract class Car {
 
-    private final String carBrand;
-    private final String carClass;
-    private final double weight;
-    private final Driver driver;
-    private final Engine engine;
+    protected final String carBrand;
+    protected final String carClass;
+    protected final double weight;
+    protected final Driver driver;
+    protected final Engine engine;
 
     public Car(String carBrand, String carClass, double weight) {
         this.carBrand = carBrand;

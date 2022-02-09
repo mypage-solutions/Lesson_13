@@ -2,7 +2,7 @@ package com.mykhailo.professions;
 
 public class Driver extends Person {
 
-    private int experience;
+    protected int experience;
 
     public Driver() {
     }
