@@ -16,7 +16,7 @@
 
 Homework contains a topic:
 1. Declaring classes that inherit from another class.
-   Implementation of Composition in Java.
+   Implementation of Composition in Java. Derived classes.
 
 ## Technologies Used
 
