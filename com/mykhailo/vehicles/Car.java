@@ -38,19 +38,19 @@ public abstract class Car {
         engine.setPower(power);
     }
 
-    public void start() {
+    public final void start() {
         System.out.println("Let's go.");
     }
 
-    public void stop() {
+    public final void stop() {
         System.out.println("Stop.");
     }
 
-    public void turnRight() {
+    public final void turnRight() {
         System.out.println("Turn Right.");
     }
 
-    public void turnLeft() {
+    public final void turnLeft() {
         System.out.println("Turn Left.");
     }
 
