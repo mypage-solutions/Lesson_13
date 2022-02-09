@@ -6,7 +6,6 @@ import java.util.Date;
 public abstract class Person {
 
     protected String dateOfBirth;
-    protected String fullName;
 
     public String getDateOfBirth() {
         return dateOfBirth;
@@ -14,14 +13,6 @@ public abstract class Person {
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
     }
 
     public final void getAge() {
@@ -35,7 +26,7 @@ public abstract class Person {
                 && Integer.parseInt(dateOfBirth.substring(3, 5)) <= 12 && Integer.parseInt(dateOfBirth.substring(6)) > 1920
                 && Integer.parseInt(dateOfBirth.substring(6)) <= presentYear) {
             int yearOfBirth = Integer.parseInt(dateOfBirth.substring(6));
-            System.out.println("Driver's age is " + (presentYear - yearOfBirth));
+            System.out.println("Driver is " + (presentYear - yearOfBirth) + " years old.");
         } else {
             System.out.println("Not allowed dateOfBirth format.");
         }
@@ -45,7 +36,6 @@ public abstract class Person {
     public String toString() {
         return "Person{" +
                 "dateOfBirth='" + dateOfBirth + '\'' +
-                ", fullName='" + fullName + '\'' +
                 '}';
     }
 }
