@@ -8,18 +8,6 @@ public abstract class Person {
     protected String dateOfBirth;
     protected String fullName;
 
-    public Person() {
-    }
-
-    public Person(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public Person(String dayOfBirth, String fullName) {
-        this.dateOfBirth = dayOfBirth;
-        this.fullName = fullName;
-    }
-
     public String getDateOfBirth() {
         return dateOfBirth;
     }
@@ -47,7 +35,7 @@ public abstract class Person {
                 && Integer.parseInt(dateOfBirth.substring(3, 5)) <= 12 && Integer.parseInt(dateOfBirth.substring(6)) > 1920
                 && Integer.parseInt(dateOfBirth.substring(6)) <= presentYear) {
             int yearOfBirth = Integer.parseInt(dateOfBirth.substring(6));
-            System.out.println(presentYear - yearOfBirth);
+            System.out.println("Driver's age is " + (presentYear - yearOfBirth));
         } else {
             System.out.println("Not allowed dateOfBirth format.");
         }

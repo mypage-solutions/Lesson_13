@@ -2,15 +2,7 @@ package com.mykhailo.professions;
 
 public class Driver extends Person {
 
-    protected int experience;
-
-    public Driver() {
-    }
-
-    public Driver(String fullName, int experience) {
-        super(fullName);
-        this.experience = experience;
-    }
+    private int experience;
 
     public int getExperience() {
         return experience;
