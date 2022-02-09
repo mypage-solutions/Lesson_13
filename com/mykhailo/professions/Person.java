@@ -5,8 +5,8 @@ import java.util.Date;
 
 public abstract class Person {
 
-    private String dateOfBirth;
-    private String fullName;
+    protected String dateOfBirth;
+    protected String fullName;
 
     public Person() {
     }
@@ -36,12 +36,21 @@ public abstract class Person {
         this.fullName = fullName;
     }
 
-    public final void presentAge() {
+    public final void getAge() {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy");
         Date date = new Date();
         int presentYear = Integer.parseInt(formatter.format(date));
-        int yearOfBirth = Integer.parseInt(dateOfBirth.substring(6));
-        System.out.println(presentYear - yearOfBirth);
+        if (dateOfBirth != null && dateOfBirth.length() == 10 && dateOfBirth.substring(6).matches("[0-9]+")
+                && dateOfBirth.substring(0, 2).matches("[0-9]+") && dateOfBirth.substring(3, 5).matches("[0-9]+")
+                && dateOfBirth.charAt(2) == '.' && dateOfBirth.charAt(5) == '.' && Integer.parseInt(dateOfBirth.substring(0, 2)) > 0
+                && Integer.parseInt(dateOfBirth.substring(0, 2)) <= 31 && Integer.parseInt(dateOfBirth.substring(3, 5)) > 0
+                && Integer.parseInt(dateOfBirth.substring(3, 5)) <= 12 && Integer.parseInt(dateOfBirth.substring(6)) > 1920
+                && Integer.parseInt(dateOfBirth.substring(6)) <= presentYear) {
+            int yearOfBirth = Integer.parseInt(dateOfBirth.substring(6));
+            System.out.println(presentYear - yearOfBirth);
+        } else {
+            System.out.println("Not allowed dateOfBirth format.");
+        }
     }
 
     @Override
