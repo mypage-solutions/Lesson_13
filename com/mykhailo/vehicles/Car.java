@@ -39,7 +39,7 @@ public class Car {
     }
 
     public final void start() {
-        System.out.println("Let's go.");
+        System.out.println("Go.");
     }
 
     public final void stop() {
