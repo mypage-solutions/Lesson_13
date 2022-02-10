@@ -12,7 +12,12 @@ public class SportCar extends Car {
     @Override
     public String toString() {
         return "SportCar{" +
-                "maxSpeed=" + maxSpeed +
-                "} " + super.toString();
+                "carBrand='" + carBrand + '\'' +
+                ", carClass='" + carClass + '\'' +
+                ", weight=" + weight +
+                ", driver=" + driver +
+                ", engine=" + engine +
+                ", maxSpeed=" + maxSpeed +
+                '}';
     }
 }

@@ -12,7 +12,12 @@ public class Lorry extends Car{
     @Override
     public String toString() {
         return "Lorry{" +
-                "carrying=" + carrying +
-                "} " + super.toString();
+                "carBrand='" + carBrand + '\'' +
+                ", carClass='" + carClass + '\'' +
+                ", weight=" + weight +
+                ", driver=" + driver +
+                ", engine=" + engine +
+                ", carrying=" + carrying +
+                '}';
     }
 }
