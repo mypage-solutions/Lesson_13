@@ -17,8 +17,8 @@ public class CarFactory {
         lorry.setEngine("Renault", 400);
         System.out.println(lorry);
         car.driver.getAge();
-        lorry.driver.getAge();
         sportCar.driver.getAge();
+        lorry.driver.getAge();
 
     }
 }
