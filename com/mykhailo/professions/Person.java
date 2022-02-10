@@ -5,7 +5,16 @@ import java.util.Date;
 
 public abstract class Person {
 
+    protected String fullName;
     protected String dateOfBirth;
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
 
     public String getDateOfBirth() {
         return dateOfBirth;
@@ -35,7 +44,8 @@ public abstract class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "dateOfBirth='" + dateOfBirth + '\'' +
+                "fullName='" + fullName + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
                 '}';
     }
 }
