@@ -24,7 +24,7 @@ public abstract class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public final void getAge() {
+    public final void driverAge() {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy");
         Date date = new Date();
         int presentYear = Integer.parseInt(formatter.format(date));

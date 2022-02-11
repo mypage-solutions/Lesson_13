@@ -13,12 +13,12 @@ public class CarFactory {
         sportCar.setEngine("Renault", 180);
         System.out.println(sportCar);
         Lorry lorry = new Lorry("DAF", "F", 5000, 1500);
-        lorry.setDriver("John Johnson", 20, "15.03.1982");
+        lorry.setDriver("John Johnson", 20, "15.01.1982");
         lorry.setEngine("Renault", 400);
         System.out.println(lorry);
-        car.driver.getAge();
-        sportCar.driver.getAge();
-        lorry.driver.getAge();
+        car.driver.driverAge();
+        sportCar.driver.driverAge();
+        lorry.driver.driverAge();
 
     }
 }
